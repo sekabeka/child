@@ -206,5 +206,5 @@ class ChildWorld(scrapy.Spider):
                         tmp.append(prod)
                         del prod['№ link']
                 df = pd.DataFrame(tmp)
-                df.to_excel(writer, index=False, sheet_name=name)
+                df.to_excel(writer, index=False, sheet_name=f'{name} link')
           
